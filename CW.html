@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class work</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <script>
+        generateHeader('Nav with array', ['Menu', 'About', 'Contacts', 'test1', 'test2'], 'brown', 'white');
+        generateHeader('Nav with digid', 7, '#FD975E', '#074A5E');
+
+        function generateHeader(title, navItems, bgcolor, fontcolor){
+            var buttons = '';
+            if(Array.isArray(navItems)){
+                for(var i = 0; i < navItems.length; i++){
+                    buttons += `<a href="#" class="bn-item">${navItems[i]}</a>`;
+                }
+            }
+            if(typeof navItems == 'number'){
+                for(var i = 0; i < navItems; i++){
+                    buttons += `<a href="#" class="bn-item">EMPTY</a>`;
+                }
+            }
+            document.write(
+                `<header style="background-color: ${bgcolor}; color: ${fontcolor};">
+                    <div class="head-col-left">
+                        <h1 class="site-name" id="titleHead">${title}</h1>
+                    </div>
+                    <div class="head-col-right">
+                        <nav class="base-nav" id="navItm">
+                            ${buttons}
+                        </nav>
+                    </div>
+                </header>`
+            );
+        }
+    </script>
+</body>
+</html>

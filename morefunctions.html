@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More functions</title>
+</head>
+<body>
+    <script>
+
+        // console.log(power(5,3));
+        // console.log(power(9));
+        // console.log (calculateCalories('man', 180, 2))
+        // console.log (calculateCalories('man', 180, 2))
+
+        // calcCal('man', [180,176,155])
+
+        console.log(sum(12, 15, 5.5, 3, 15.5));
+
+
+        function sum(){
+            var result = 0;
+            for(var i = 0; i < arguments.length; i++){
+                if(typeof arguments[i] == 'number'){
+                    result += arguments[i];
+                }
+            }
+            return result;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //     function calcCal(gender, height){
+    //         var result = 0;
+    //         if(typeof gender == 'string'){
+    //             if(typeof height == 'heigth'){
+    //                 result = gender == 'man' ? (height-100)*20 : (height - 105) * 19;
+    //             }
+    //             else if(Array.isArray(height)){
+    //             for(var el of height){
+    //                 result = gender == 'man' ?
+    //                 (height-100)*20 : (height - 105) * 19;
+    //                 (el0) =  result = gender == 'man' ? 2 :1;
+    //             }
+    //         }
+    //     }
+    // }
+
+
+        // function calculateCalories(gender, height, personsNumber){
+        //     var result = gender =='man' ? 
+        //     (height-100)*20 : 
+        //     (height - 105) * 19;
+
+        //     if (typeof personsNumber == 'number') {
+        //         result *= personsNumber;
+        //     }
+
+        //     return result;
+        // }
+
+        // function power(left, right = 2){
+        //     return left ** right;
+        // }
+    </script>
+</body>
+</html>

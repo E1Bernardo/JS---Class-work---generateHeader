@@ -1,0 +1,56 @@
+/* =====GLOBAL SETINGS===== */
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-size: 16px;
+    color: var(--font-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+}
+
+/* =====HEADER===== */
+header{
+    padding: 0 4px;
+
+    height: 60px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-col-left, .head-col-right{
+    display: flex;
+    align-items: center;
+}
+
+.site-name{
+    margin-left: 6px;
+
+    font-size: 1.8em;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.base-nav{
+    display: flex;
+    align-items: center;
+}
+
+.bn-item{
+    margin-left: 6px;
+    padding: 6px 8px;
+
+    border: 3px solid var(--special-color);
+
+    font-size: 1.2em;
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.5px;
+
+    transition: all .1s;
+}
